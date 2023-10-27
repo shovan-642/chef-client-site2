@@ -1,0 +1,18 @@
+.savory-logo{
+    color:#807b6c;
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+}
+.navmenu{
+    background-color: rgba(234, 232, 223, 0.8) !important;
+}
+
+.menu {
+    color:#807b6c;
+    font-weight: 700;
+}
+
+.menu-link:hover{
+    color: #ffc107 !important;
+}
