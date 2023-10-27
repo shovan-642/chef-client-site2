@@ -9,3 +9,13 @@
     border: 10px solid #d9d5c5 !important;
     border-radius: 0;
 }
+
+.chef-photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.card-describe{
+    margin-top: 1.5em;
+}

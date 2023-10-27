@@ -7,10 +7,8 @@ import Chef_Portfolio from '../../../Component/Chef-Portfolio/Chef_Portfolio';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
             <Banner></Banner>
             <Chef_Portfolio></Chef_Portfolio>
-            <Footer></Footer>
         </div>
     );
 };

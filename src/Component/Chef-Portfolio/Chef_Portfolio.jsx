@@ -22,11 +22,11 @@ const Chef_Portfolio = () => {
                     <Col key={portfolio.id}>
                         <Card className='single-chef'>
                             <Row noGutters>
-                                <Col md={4}>
-                                    <Card.Img src={portfolio.Chef_Picture} alt={portfolio.Chef_Name} />
+                                <Col md={5}>
+                                    <Card.Img className='chef-photo' src={portfolio.Chef_Picture} alt={portfolio.Chef_Name} />
                                 </Col>
-                                <Col md={8}>
-                                    <Card.Body>
+                                <Col md={7}>
+                                    <Card.Body className='ms-3 card-describe'>
                                         <Card.Title>{portfolio.Chef_Name}</Card.Title>
                                         <Card.Text>
                                             Years of Experience: {portfolio.Years_of_experience}<br />
