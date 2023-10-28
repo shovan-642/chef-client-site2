@@ -1,9 +1,13 @@
-import React from 'react';
-import { Button, Container, Form, Nav, Navbar, TabContainer } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import {Container, Form, Nav, Navbar} from 'react-bootstrap';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProviders';
+import { FaUserCircle } from 'react-icons/fa';
 
 const Header = () => {
+  const {user}= useContext(AuthContext)
+
   return (
     <div>
       <Navbar expand="lg" className="navmenu">
@@ -20,10 +24,16 @@ const Header = () => {
               <Nav.Link className='menu-link' href="/blog">Blog</Nav.Link>
             </Nav>
             <Form className="d-flex">
+              {
+                user && <FaUserCircle style = {{fontSize: "2rem"}}></FaUserCircle>
+              }
               
+{           
+user ?
+<button>Logout</button> :
               <Link to="/login">
                 <button className="btn">Login</button>
-              </Link>
+              </Link>}
 
             </Form>
           </Navbar.Collapse>

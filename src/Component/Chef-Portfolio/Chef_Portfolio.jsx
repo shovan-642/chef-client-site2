@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import './Chef-Portfolio.css'
 const Chef_Portfolio = () => {
     const [portfolios, setPortfolios] = useState([]);
@@ -33,6 +33,7 @@ const Chef_Portfolio = () => {
                                             Number of Recipes: {portfolio.Numbers_of_recipes}<br />
                                             Likes: {portfolio.Likes}
                                         </Card.Text>
+                                        <Button variant="secondary">View Reciepe</Button>{' '}
                                     </Card.Body>
                                 </Col>
                             </Row>
